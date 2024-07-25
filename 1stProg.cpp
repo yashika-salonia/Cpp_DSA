@@ -44,10 +44,41 @@ int main(){
     char ch=98;
     cout << ch << endl;
 
-    //Storing variable with large storage han datatype storage capacity
+    //Storing variable with large storage than datatype storage capacity
 
     char w=123456;
-    cout << w << endl; //display warning as well as the output with the @ sign as takes input as last bit value i.e. 64(@ in ascii)
+    cout << w << endl; //display warning as well as the output with the @ sign as takes input as last bit value i.e. 64(@) in ascii)
 
+    //by default int takes both +ve and -value
+    int x=10,y=-2;
+    cout << x << endl;
+    cout << y << endl;
+
+    //to print +ve value use unsigned with int
+    unsigned int z=10;
+    unsigned int p=-10;
+    //both will have different value
+    cout << z << endl; //10
+    cout << p << endl; //4294967286 => huuge no bcoz it takes 1's compliment to make it +ve
+
+    //Operators
+    //Arithmetic operators => =,-,/,%,*
+    //1. / operator => float/int = float and double/int = double
+    int f=10,g=3;
+    cout << f/g << endl; //3
+    cout << 2.0/5 << endl; //0.4
+
+    //Relational operators => =,<,>,<=,>=,!=
+    int i=10,j=3;
+    cout << bool(i<=j) << endl; //0
+    cout << bool(i!=j) << endl; //1
+    cout << bool(i<j) << endl; //0
+    cout << bool(i>j) << endl; //1
+    cout << bool(i>=j) << endl; //1
+    cout << bool(i<=j) << endl; //0
+
+    //Assignment operator => '=' used to asign value
+    //Logical operator => &&, || ,!
+    //Bitwise operator 
 return 0;
 }
